@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <!--head tag link-->
+    {{>headtagdataallfiles}}
+  <!--head tag link-->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!--navbar header-->
+{{>header}}
+    <!-- main header of page -->
+    <div class="container container-fluid main-header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!--left side view-->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>welcome to weather app</p>
+              <h1>get the latest
+                <span style="color: rgb(2, 2, 255);">weather </span>info of your
+                city</h1>
+              <a href="/weather"><button>check weather</button></a>
+            </div>
+            <!--right side view-->
+            <div class="col-md-6 col-12 main_header_right">
+
+              <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/5643263.jpg" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/5255894.jpg" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/5961153.jpg" class="w-100" alt="..." />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main header of page end -->
+
+    <!--footer-->
+   {{>footer}}
+    <!--footer-->
+
+  </body>
+</html>

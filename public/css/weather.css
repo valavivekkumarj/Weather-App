@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+
+
+*{
+  font-family: "Piazzolla", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+html{
+    font-size: 62.5%;
+}
+.row{
+    margin: 0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 1.5rem 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 2rem;
+}
+.vala{
+    margin-left: auto;
+}
+.navbar-toggler{
+    color: var(--main-bg);
+    background-color: #fff;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: aqua;
+}
+@keyframes rot {
+0%{
+    transform:rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+
+.main_header_left{
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.errorimg img{
+    height: 30rem;
+    width: 60rem;
+}
+.main_header_left p{
+   font-size: 2rem;
+}
+
+.main_header_left h1{
+   font-size: 4rem;
+   margin: 1rem 0 1rem 0;
+   text-transform: capitalize;
+}
+.main_header_left button{
+    font-size: 1.7rem;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 0 8px 6px -6px black;
+    font-weight:600;
+    color: aqua;
+background-color: var(--main-bg);
+}
+.main_header_left button:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(2, 2, 255);
+box-shadow: 0 8px 6px -6px rgb(2, 2, 255);
+}
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+    text-align: center;
+    height: 4rem;
+}
+footer p{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height:4rem;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    
+    .main_header_right{
+        height: auto;
+        margin: 5rem 0;
+    }
+    
+}
+
+/*about page my photo css:*/
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(0,0,0,0.3));
+}
+
+
+
+
+
+
+/*weather csss*/
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Content Styling */
+.main_content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main_content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.main_content input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.main_content input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Temperature Information Styling */
+.tempinformation {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top_layer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#day, #date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main_layer #city_name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.middle_layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle_layer #temp {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.middle_layer #temp sup {
+    font-size: 24px;
+}
+
+.middle_layer #temp_status {
+    font-size: 24px;
+}
+
+.middle_layer #temp_status i {
+    font-size: 48px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tempinformation {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.data_hide {
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.tempinformation{
+    width: auto;
+}
+.temp_form{
+    width: auto;
+}

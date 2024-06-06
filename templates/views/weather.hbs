@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <!--head tag link-->
+    {{>headtagdataallfiles}}
+  <!--head tag link-->
+
+    <link rel="stylesheet" href="css/weather.css" />
+  </head>
+  <body>
+<!--navbar-->
+   {{>header}}
+
+    <!-- main header of page -->
+    <div class="container container-fluid main-header">
+      <div class="row">
+        <div class="col-md-8 col-12 mx-auto">
+          <div class="row">
+            <!--left side view-->
+            <div class="col-md-10 col-12 main_header_left">
+
+              <div class="main_content">
+                <form class="temp_form">
+                  <input
+                    type="text"
+                    id="cityname"
+                    placeholder="Enter your city"
+                  />
+                  <input type="submit" value="search" id="submitbtn" />
+                </form>
+                <br />
+                <div class="tempinformation">
+                  <div class="top_layer">
+                    <p id="day">Tuesday</p>
+                    <p id="date">21 OCT</p>
+                  </div>
+                  <div class="main_layer dataContainer">
+                    <p id="city_name">get output here</p>
+                    <div class="middle_layer data_hide">
+                      <p id="temp"><span id="temp1">0</span><sup> o</sup>C</p>
+                      <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main header of page -->
+
+    <!--footer-->
+   {{>footer}}
+    <!--footer-->
+
+<script src="js/main.js"></script>
+  </body>
+</html>
